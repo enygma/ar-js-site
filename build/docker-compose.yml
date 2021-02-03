@@ -1,0 +1,10 @@
+version: "2.1"
+
+services:  
+  web:
+    image: arsite-web
+    container_name: arsite-web
+    ports:
+      - "8080:80"
+    volumes:
+      - ../code:/var/www/html

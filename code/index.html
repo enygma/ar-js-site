@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="/assets/js/aframe.min.js"></script>
+    <script src="/assets/js/aframe-ar-nft.js"></script>
+    <script src="/assets/js/aframe-extras.loaders.min.js"></script>
+    <!-- <script src="/assets/js/three.js"></script> -->
+    <script>
+        THREEx.ArToolkitContext.baseURL = '/assets/js/three.js';
+    </script>
+  </head>
+  <body style='margin: 0; overflow: hidden;'>
+    <a-scene
+        vr-mode-ui="enabled: false" embedded
+        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        
+        <a-camera gps-camera rotation-reader></a-camera>
+
+        <!-- <a-entity gltf-model="/assets/models/magnemite/scene.gltf" rotation="0 0 0" scale="1 1 1" gps-entity-place="longitude: -114.3421679; latitude: 48.4002046;" animation-mixer/> -->
+	  </a-scene>
+  </body>
+  <script src="/assets/js/main.js"></script>
+</html>
